@@ -1,207 +1,128 @@
 class people::stephenyeargin {
 
+  $HOME = "/Users/${::boxen_user}"
 
   ##
-  # Sublime Text
+  # Brewcask
   ##
-  include sublime_text_2
+  package {
+    [
+      'alfred',
+      'appzapper',
+      'atom',
+      'backblaze',
+      'bittorrent-sync',
+      'boxer',
+      'caffeine',
+      'cloud',
+      'dash',
+      'dropbox',
+      'evernote',
+      'firefox',
+      'flux',
+      'github',
+      'google-chrome',
+      'imagealpha',
+      'imageoptim',
+      'linkinus',
+      'minecraft',
+      'mou',
+      'openemu',
+      'sidestep',
+      'sizeup',
+      'skitch',
+      'steam',
+      'trailer',
+      'transmission',
+      'vagrant',
+      'virtualbox',
+      'vlc',
+    ]:
+    install_options => ['--appdir=/Applications'],
+    provider => 'brewcask'
+  }
 
-  # sublime_text_2::package { 'CoffeeScript':
-  #   source => 'sergeche/emmet-sublime'
-  # }
 
   ##
   # Homebrew Modules
   ##
-
-  include homebrew
-
-  # package { 'autoconf':
-  #   ensure => present
-  # }
-
-  # package { 'automake':
-  #   ensure => present
-  # }
-
-  package { 'bash':
+  package {
+    [
+      'bash',
+      'bash-completion',
+      'fortune',
+      'gettext',
+      'git',
+      'gnupg',
+      'heroku-toolbelt',
+      'imagemagick',
+      'ios-sim',
+      'lynx',
+      'openssl',
+      'pngcrush',
+      'python3',
+      'readline',
+      'ssh-copy-id',
+      'wget'
+    ]:
     ensure => present
   }
 
-  package { 'bash-completion':
-    ensure => present
+
+  ##
+  # Git Defaults
+  ##
+  git::config::global {
+    'user.name':
+      value => 'Stephen Yeargin';
+    'user.email':
+      value => 'stephen.yeargin@gmail.com';
+    'github.user':
+      value => 'stephenyeargin';
+    'color.ui':
+      value => 'true';
+    'core.quotepath':
+      value => 'false';
+    'diff.tool':
+      value => 'opendiff';
+    'merge.tool':
+      value => 'opendiff';
+    'push.default':
+      value => 'simple';
+    'alias.amend':
+      value => 'commit --amend -C HEAD';
   }
 
-  package { 'fortune':
-    ensure => present
+
+  ##
+  # OSX Defaults
+  ##
+  boxen::osx_defaults {
+    "Set aqua color variant to graphite":
+      ensure => present,
+      key    => 'AppleAquaColorVariant',
+      domain => 'NSGlobalDomain',
+      user   => $::boxen_user,
+      type   => 'int',
+      value  => 6;
+    "disables Dashboard":
+      user   => $::boxen_user,
+      domain => 'com.apple.dashboard',
+      key    => 'mcx-disabled',
+      value  => true;
   }
-
-  # package { 'freetype':
-  #   ensure => present
-  # }
-
-  # package { 'gdbm':
-  #   ensure => present
-  # }
-
-  package { 'gettext':
-    ensure => present
+  ~> exec { 'killall Finder':
+    refreshonly => true
   }
-
-  # package { 'gifsicle':
-  #   ensure => present
-  # }
-
-  package { 'git':
-    ensure => present
+  class { 'osx::global::natural_mouse_scrolling':
+    enabled => false
   }
-
-  package { 'gnupg':
-    ensure => present
+  include osx::global::enable_keyboard_control_access
+  include osx::no_network_dsstores
+  include osx::dock::dim_hidden_apps
+  class { 'osx::dock::icon_size':
+    size => 72
   }
-
-  # package { 'help2man':
-  #   ensure => present
-  # }
-
-  package { 'heroku-toolbelt':
-    ensure => present
-  }
-
-  package { 'hub':
-    ensure => present
-  }
-
-  # package { 'icu4c':
-  #   ensure => present
-  # }
-
-  package { 'imagemagick':
-    ensure => present
-  }
-
-  package { 'ios-sim':
-    ensure => present
-  }
-
-  # package { 'jpeg':
-  #   ensure => present
-  # }
-
-  # package { 'json-c':
-  #   ensure => present
-  # }
-
-  # package { 'keybase':
-  #   ensure => present
-  # }
-
-  # package { 'libiconv':
-  #   ensure => present
-  # }
-
-  # package { 'libpng':
-  #   ensure => present
-  # }
-
-  # package { 'libtool':
-  #   ensure => present
-  # }
-
-  # package { 'libxml2':
-  #   ensure => present
-  # }
-
-  # package { 'libxslt':
-  #   ensure => present
-  # }
-
-  # package { 'libyubikey':
-  #   ensure => present
-  # }
-
-  package { 'lynx':
-    ensure => present
-  }
-
-  package { 'mysql':
-    ensure => present
-  }
-
-  package { 'node':
-    ensure => present
-  }
-
-  package { 'openssl':
-    ensure => present
-  }
-
-  # package { 'ossp-uuid':
-  #   ensure => present
-  # }
-
-  # package { 'pam_yubico':
-  #   ensure => present
-  # }
-
-  # package { 'pkg-config':
-  #   ensure => present
-  # }
-
-  package { 'pngcrush':
-    ensure => present
-  }
-
-  # package { 'pngnq':
-  #   ensure => present
-  # }
-
-  package { 'postgresql':
-    ensure => present
-  }
-
-  package { 'python3':
-    ensure => present
-  }
-
-  package { 'rbenv':
-    ensure => present
-  }
-
-  package { 'readline':
-    ensure => present
-  }
-
-  package { 'sqlite':
-    ensure => present
-  }
-
-  package { 'ssh-copy-id':
-    ensure => present
-  }
-
-  # package { 'unixodbc':
-  #   ensure => present
-  # }
-
-  package { 'wget':
-    ensure => present
-  }
-
-  # package { 'xz':
-  #   ensure => present
-  # }
-
-  # package { 'ykclient':
-  #   ensure => present
-  # }
-
-  # package { 'ykpers':
-  #   ensure => present
-  # }
-
-  # package { 'zlib':
-  #   ensure => present
-  # }
+  osx::recovery_message { 'Call or text (615) 364-6380 if recovered.': }
 
 }
