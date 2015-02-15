@@ -90,7 +90,7 @@ class people::stephenyeargin {
     'merge.tool':
       value => 'opendiff';
     'push.default':
-      value => 'simple';
+      value => 'current';
     'alias.amend':
       value => 'commit --amend -C HEAD';
   }
