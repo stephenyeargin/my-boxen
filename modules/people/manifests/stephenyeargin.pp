@@ -2,6 +2,8 @@ class people::stephenyeargin {
 
   $HOME = "/Users/${::boxen_user}"
 
+  include teams::developers
+
   ##
   # Brewcask
   ##
@@ -39,9 +41,9 @@ class people::stephenyeargin {
       'vlc',
     ]:
     install_options => ['--appdir=/Applications'],
-    provider => 'brewcask'
+    provider => 'brewcask',
+    ensure => present
   }
-
 
   ##
   # Homebrew Modules
@@ -63,11 +65,11 @@ class people::stephenyeargin {
       'python3',
       'readline',
       'ssh-copy-id',
+      'vim',
       'wget'
     ]:
     ensure => present
   }
-
 
   ##
   # Git Defaults
@@ -92,7 +94,6 @@ class people::stephenyeargin {
     'alias.amend':
       value => 'commit --amend -C HEAD';
   }
-
 
   ##
   # OSX Defaults
@@ -124,5 +125,4 @@ class people::stephenyeargin {
     size => 72
   }
   osx::recovery_message { 'Call or text (615) 364-6380 if recovered.': }
-
 }

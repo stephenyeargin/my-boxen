@@ -44,6 +44,11 @@ GITHUBTARBALL
     hub (1.3.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.99.19)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.4)
@@ -74,6 +79,11 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-postgresql
+  specs:
+    postgresql (2.2.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-redis
   specs:
     redis (3.1.0)
@@ -92,6 +102,11 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sysctl
+  specs:
+    sysctl (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -130,17 +145,20 @@ DEPENDENCIES
   hub (= 1.3.0)
   inifile (= 1.1.1)
   module_data (= 0.0.3)
+  mysql (= 1.99.19)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
   openssl (= 1.0.0)
   osx (= 2.7.1)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  postgresql (= 2.2.5)
   redis (= 3.1.0)
   repository (= 2.3.0)
   ruby (= 8.1.7)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
+  sysctl (= 1.0.1)
   xquartz (= 1.2.1)
   zsh (= 1.0.0)
 

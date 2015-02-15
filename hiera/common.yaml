@@ -1,0 +1,19 @@
+---
+
+# See https://github.com/boxen/puppet-ruby for docs
+ruby::global::version: "2.1.0"
+ruby::rbenv_plugins:
+  rbenv-vars:
+    ensure: v1.0.0
+    source: sstephenson/rbenv-vars
+  ruby-build:
+    ensure: v20131225.1
+    source: sstephenson/ruby-build
+ruby::version::alias:
+  2.0.0: 2.0.0-p353
+
+# See https://github.com/boxen/puppet-java for docs
+java::update_version: 51
+
+# MySQL Socket
+mysql::socket: '%{::boxen::config::datadir}/mysql/socket'
