@@ -3,6 +3,7 @@ class people::stephenyeargin {
   $HOME = "/Users/${::boxen_user}"
 
   include teams::developers
+  include projects::all
 
   ##
   # Brewcask
@@ -30,6 +31,7 @@ class people::stephenyeargin {
       'minecraft',
       'mou',
       'openemu',
+      'screenhero',
       'sidestep',
       'sizeup',
       'skitch',
