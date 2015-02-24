@@ -61,9 +61,9 @@ github "xquartz",     "1.2.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "osx", "2.7.1"
-github "redis", "3.1.0"
-github "zsh", "1.0.0"
+github "osx",         "2.8.0"
+github "redis",       "3.1.0"
+github "zsh",         "1.0.0"
 github "postgresql",  "2.2.5"
 github "mysql",       "1.99.19"
 github "sysctl",      "1.0.1"
