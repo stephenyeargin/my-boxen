@@ -6,7 +6,11 @@ class teams::developers {
   include brewcask
   package {
     [
+      'firefox',
+      'google-chrome',
       'tunnelblick',
+      'vagrant',
+      'virtualbox'
     ]:
     install_options => ['--appdir=/Applications'],
     provider => 'brewcask',
@@ -40,9 +44,13 @@ class teams::developers {
   ##
   package {
     [
+      'bash',
+      'bash-completion',
+      'git',
       'mysql',
       'postgresql',
-      'sqlite'
+      'sqlite',
+      'vim'
     ]:
     ensure => present
   }

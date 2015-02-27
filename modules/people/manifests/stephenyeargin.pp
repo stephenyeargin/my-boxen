@@ -21,10 +21,8 @@ class people::stephenyeargin {
       'dash',
       'dropbox',
       'evernote',
-      'firefox',
       'flux',
       'github',
-      'google-chrome',
       'imagealpha',
       'imageoptim',
       'linkinus',
@@ -38,8 +36,6 @@ class people::stephenyeargin {
       'steam',
       'trailer',
       'transmission',
-      'vagrant',
-      'virtualbox',
       'vlc',
     ]:
     install_options => ['--appdir=/Applications'],
@@ -52,11 +48,8 @@ class people::stephenyeargin {
   ##
   package {
     [
-      'bash',
-      'bash-completion',
       'fortune',
       'gettext',
-      'git',
       'gnupg',
       'heroku-toolbelt',
       'imagemagick',
@@ -67,7 +60,6 @@ class people::stephenyeargin {
       'python3',
       'readline',
       'ssh-copy-id',
-      'vim',
       'wget'
     ]:
     ensure => present
