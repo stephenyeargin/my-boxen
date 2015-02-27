@@ -1,1 +1,59 @@
-example.pp.dist
+# Be sure to update <your_github_username>
+class people::your_github_username {
+
+  $HOME = "/Users/${::boxen_user}"
+
+  include teams::developers
+
+  ##
+  # Brewcask
+  ##
+  package {
+    [
+      'alfred',
+      'atom'
+    ]:
+    install_options => ['--appdir=/Applications'],
+    provider => 'brewcask',
+    ensure => present
+  }
+
+  ##
+  # Homebrew Modules
+  ##
+  package {
+    [
+      'ios-sim',
+      'lynx',
+      'openssl',
+      'python3',
+      'ssh-copy-id',
+      'wget'
+    ]:
+    ensure => present
+  }
+
+  ##
+  # Git Defaults
+  ##
+  git::config::global {
+    'user.name':
+      value => 'Your Name';
+    'user.email':
+      value => 'your_username@example.com';
+    'github.user':
+      value => 'your_username';
+    'color.ui':
+      value => 'true';
+    'core.quotepath':
+      value => 'false';
+    'diff.tool':
+      value => 'opendiff';
+    'merge.tool':
+      value => 'opendiff';
+    'push.default':
+      value => 'current';
+    'alias.amend':
+      value => 'commit --amend -C HEAD';
+  }
+}

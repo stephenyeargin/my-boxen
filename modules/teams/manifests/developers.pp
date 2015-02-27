@@ -6,6 +6,7 @@ class teams::developers {
   include brewcask
   package {
     [
+      'backblaze',
       'firefox',
       'google-chrome',
       'tunnelblick',
