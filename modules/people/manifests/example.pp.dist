@@ -3,11 +3,29 @@ class people::your_github_username {
 
   $HOME = "/Users/${::boxen_user}"
 
+  ##
+  # Developer
   include teams::developers
+  
+  ##
+  # All Projects
+  include projects::all
+
+  ##
+  # Firefox
+  include firefox
+
+  ##
+  # Chrome
+  include chrome
+
+  ##
+  # 1Password
+  include onepassword
+  include onepassword::chrome
 
   ##
   # Brewcask
-  ##
   package {
     [
       'alfred',
@@ -20,7 +38,6 @@ class people::your_github_username {
 
   ##
   # Homebrew Modules
-  ##
   package {
     [
       'ios-sim',
@@ -35,7 +52,6 @@ class people::your_github_username {
 
   ##
   # Git Defaults
-  ##
   git::config::global {
     'user.name':
       value => 'Your Name';

@@ -7,8 +7,6 @@ class teams::developers {
   package {
     [
       'backblaze',
-      'firefox',
-      'google-chrome',
       'tunnelblick',
       'vagrant',
       'virtualbox'

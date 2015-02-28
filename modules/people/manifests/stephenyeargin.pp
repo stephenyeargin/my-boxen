@@ -2,12 +2,30 @@ class people::stephenyeargin {
 
   $HOME = "/Users/${::boxen_user}"
 
+  ##
+  # Developer
   include teams::developers
+  
+  ##
+  # All Projects
   include projects::all
 
   ##
-  # Brewcask
+  # Firefox
+  include firefox
+
   ##
+  # Chrome
+  include chrome
+
+  ##
+  # 1Password
+  ##
+  include onepassword
+  include onepassword::chrome
+
+  ##
+  # Brewcask
   package {
     [
       'alfred',
@@ -44,7 +62,6 @@ class people::stephenyeargin {
 
   ##
   # Homebrew Modules
-  ##
   package {
     [
       'fortune',
@@ -67,7 +84,6 @@ class people::stephenyeargin {
 
   ##
   # Git Defaults
-  ##
   git::config::global {
     'user.name':
       value => 'Stephen Yeargin';
@@ -91,7 +107,6 @@ class people::stephenyeargin {
 
   ##
   # OSX Defaults
-  ##
   boxen::osx_defaults {
     "Set aqua color variant to graphite":
       ensure => present,

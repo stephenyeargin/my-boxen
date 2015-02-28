@@ -9,9 +9,19 @@ GITHUBTARBALL
     brewcask (0.0.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.2.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -57,6 +67,11 @@ GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
     nodejs (4.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-onepassword
+  specs:
+    onepassword (1.1.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -136,7 +151,9 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 3.10.1)
   brewcask (= 0.0.5)
+  chrome (= 1.2.0)
   dnsmasq (= 2.0.1)
+  firefox (= 1.2.3)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.7.1)
@@ -148,6 +165,7 @@ DEPENDENCIES
   mysql (= 1.99.19)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
+  onepassword (= 1.1.5)
   openssl (= 1.0.0)
   osx (= 2.8.0)
   phantomjs (= 2.3.0)
