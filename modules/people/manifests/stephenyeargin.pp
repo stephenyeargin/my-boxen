@@ -54,6 +54,7 @@ class people::stephenyeargin {
       'imagemagick',
       'ios-sim',
       'lynx',
+      'keybase',
       'openssl',
       'pngcrush',
       'python3',
