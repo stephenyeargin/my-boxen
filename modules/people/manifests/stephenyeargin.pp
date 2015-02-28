@@ -19,12 +19,6 @@ class people::stephenyeargin {
   include chrome
 
   ##
-  # 1Password
-  ##
-  include onepassword
-  include onepassword::chrome
-
-  ##
   # Brewcask
   package {
     [
