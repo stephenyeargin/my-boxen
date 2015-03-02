@@ -58,6 +58,7 @@ class people::stephenyeargin {
   # Homebrew Modules
   package {
     [
+      'cloc',
       'fortune',
       'gettext',
       'gnupg',
