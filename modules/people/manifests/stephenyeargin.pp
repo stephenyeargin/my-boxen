@@ -77,6 +77,15 @@ class people::stephenyeargin {
   }
 
   ##
+  # Whiskey Disk
+  ##
+  ruby_gem { 'whiskey_disk for all rubies':
+    gem          => 'whiskey_disk',
+    version      => '~> 0.6',
+    ruby_version => '*',
+  }
+
+  ##
   # Git Defaults
   git::config::global {
     'user.name':

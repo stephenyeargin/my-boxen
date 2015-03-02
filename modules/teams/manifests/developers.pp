@@ -17,7 +17,7 @@ class teams::developers {
   }
 
   ##
-  # Ruby
+  # Bundler
   ##
   ruby_gem { 'bundler for all rubies':
     gem          => 'bundler',
