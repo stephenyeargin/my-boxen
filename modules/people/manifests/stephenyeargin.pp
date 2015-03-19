@@ -28,7 +28,6 @@ class people::stephenyeargin {
       'bittorrent-sync',
       'boxer',
       'caffeine',
-      'cloud',
       'dash',
       'dropbox',
       'evernote',
