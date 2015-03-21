@@ -26,7 +26,6 @@ class people::stephenyeargin {
       'alfred',
       'appzapper',
       'atom',
-      'backblaze',
       'bittorrent-sync',
       'boxer',
       'caffeine',
