@@ -22,9 +22,11 @@ class people::stephenyeargin {
   # Brewcask
   package {
     [
+      'a-better-finder-rename',
       'alfred',
       'appzapper',
       'atom',
+      'backblaze',
       'bittorrent-sync',
       'boxer',
       'caffeine',
@@ -35,10 +37,14 @@ class people::stephenyeargin {
       'github',
       'imagealpha',
       'imageoptim',
+      'licecap',
       'linkinus',
+      'makerware',
       'minecraft',
       'mou',
       'openemu',
+      'pgadmin3',
+      'sequel-pro',
       'screenhero',
       'sidestep',
       'sizeup',
@@ -47,6 +53,7 @@ class people::stephenyeargin {
       'trailer',
       'transmission',
       'vlc',
+      'yubikey-neo-manager'
     ]:
     install_options => ['--appdir=/Applications'],
     provider => 'brewcask',
