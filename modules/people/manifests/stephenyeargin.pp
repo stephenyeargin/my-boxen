@@ -38,7 +38,6 @@ class people::stephenyeargin {
       'imageoptim',
       'licecap',
       'linkinus',
-      'makerware',
       'minecraft',
       'mou',
       'openemu',
