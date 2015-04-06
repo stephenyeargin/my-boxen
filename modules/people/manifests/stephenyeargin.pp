@@ -37,7 +37,6 @@ class people::stephenyeargin {
       'imagealpha',
       'imageoptim',
       'licecap',
-      'linkinus',
       'minecraft',
       'mou',
       'openemu',
@@ -63,6 +62,7 @@ class people::stephenyeargin {
   package {
     [
       'cloc',
+      'enchant',
       'fortune',
       'gettext',
       'gnupg',
