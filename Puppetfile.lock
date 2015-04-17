@@ -151,6 +151,7 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
+  chrome (= 1.2.0)
   dnsmasq (= 2.0.1)
   firefox (= 1.2.3)
   foreman (= 1.2.0)
