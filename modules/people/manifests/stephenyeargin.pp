@@ -24,6 +24,7 @@ class people::stephenyeargin {
     [
       'a-better-finder-rename',
       'alfred',
+      'angry-ip-scanner',
       'appzapper',
       'atom',
       'bittorrent-sync',
@@ -36,6 +37,7 @@ class people::stephenyeargin {
       'github',
       'imagealpha',
       'imageoptim',
+      'lastfm',
       'licecap',
       'minecraft',
       'mou',
