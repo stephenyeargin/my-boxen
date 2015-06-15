@@ -35,6 +35,7 @@ class people::stephenyeargin {
       'evernote',
       'flux',
       'github',
+      'geekbench',
       'imagealpha',
       'imageoptim',
       'lastfm',
