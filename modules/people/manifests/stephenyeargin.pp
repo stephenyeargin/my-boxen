@@ -5,7 +5,7 @@ class people::stephenyeargin {
   ##
   # Developer
   include teams::developers
-  
+
   ##
   # All Projects
   include projects::all
@@ -41,6 +41,7 @@ class people::stephenyeargin {
       'lastfm',
       'licecap',
       'minecraft',
+      'macid',
       'mou',
       'openemu',
       'pgadmin3',

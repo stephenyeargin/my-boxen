@@ -28,7 +28,7 @@ class teams::developers {
   ##
   # Node
   ##
-  nodejs::module {
+  npm_module {
     [
       'bower',
       'coffee-script',
