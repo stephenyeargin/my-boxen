@@ -147,5 +147,5 @@ class people::stephenyeargin {
   class { 'osx::dock::icon_size':
     size => 72
   }
-  osx::recovery_message { 'Call or text (615) 364-6380 if recovered.': }
+  osx::recovery_message { 'Call or text (615) 829-6584 if recovered.': }
 }
