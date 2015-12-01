@@ -34,6 +34,7 @@ class people::stephenyeargin {
       'dropbox',
       'evernote',
       'flux',
+      'feed-the-beast',
       'github',
       'geekbench',
       'imagealpha',
