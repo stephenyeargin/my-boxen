@@ -57,7 +57,8 @@ class people::stephenyeargin {
       'trailer',
       'transmission',
       'vlc',
-      'yubikey-neo-manager'
+      'yubikey-neo-manager',
+      'zoomus'
     ]:
     install_options => ['--appdir=/Applications'],
     provider => 'brewcask',
