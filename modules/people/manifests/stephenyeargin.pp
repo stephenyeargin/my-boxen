@@ -33,6 +33,7 @@ class people::stephenyeargin {
       'dash',
       'dropbox',
       'evernote',
+      'fabric',
       'flux',
       'feed-the-beast',
       'github',
