@@ -33,6 +33,7 @@ class people::stephenyeargin {
       'dash',
       'dropbox',
       'evernote',
+      'fabric',
       'flux',
       'feed-the-beast',
       'github',
@@ -57,7 +58,8 @@ class people::stephenyeargin {
       'trailer',
       'transmission',
       'vlc',
-      'yubikey-neo-manager'
+      'yubikey-neo-manager',
+      'zoomus'
     ]:
     install_options => ['--appdir=/Applications'],
     provider => 'brewcask',
