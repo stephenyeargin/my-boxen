@@ -42,6 +42,7 @@ class people::stephenyeargin {
       'imageoptim',
       'lastfm',
       'licecap',
+      'linein',
       'minecraft',
       'macid',
       'mou',
