@@ -1,4 +1,6 @@
 ---
+# Don't append relative bin on path.
+"boxen::environment::relative_bin_on_path": false
 
 # See https://github.com/boxen/puppet-ruby for docs
 ruby::global::version: "2.1.0"
