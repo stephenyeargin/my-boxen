@@ -17,19 +17,6 @@ class teams::developers {
   }
 
   ##
-  # Node
-  ##
-  npm_module {
-    [
-      'bower',
-      'coffee-script',
-      'grunt-cli',
-      'yo'
-    ]:
-    node_version => 'v0.10'
-  }
-
-  ##
   # Homebrew
   ##
   package {
