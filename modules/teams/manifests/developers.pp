@@ -17,15 +17,6 @@ class teams::developers {
   }
 
   ##
-  # Bundler
-  ##
-  ruby_gem { 'bundler for all rubies':
-    gem          => 'bundler',
-    version      => '~> 1.0',
-    ruby_version => '*',
-  }
-
-  ##
   # Node
   ##
   npm_module {
