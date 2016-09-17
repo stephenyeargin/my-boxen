@@ -31,7 +31,6 @@ class people::stephenyeargin {
       'caffeine',
       'dash',
       'dropbox',
-      'evernote',
       'fabric',
       'flux',
       'feed-the-beast',
@@ -39,6 +38,8 @@ class people::stephenyeargin {
       'geekbench',
       'imagealpha',
       'imageoptim',
+      'joinme',
+      'keybase',
       'lastfm',
       'licecap',
       'linein',
@@ -51,7 +52,6 @@ class people::stephenyeargin {
       'screenhero',
       'sidestep',
       'sizeup',
-      'skitch',
       'skype',
       'steam',
       'sublime-text',
@@ -79,7 +79,6 @@ class people::stephenyeargin {
       'imagemagick',
       'ios-sim',
       'lynx',
-      'keybase',
       'openssl',
       'pngcrush',
       'python3',
@@ -88,15 +87,6 @@ class people::stephenyeargin {
       'wget'
     ]:
     ensure => present
-  }
-
-  ##
-  # Whiskey Disk
-  ##
-  ruby_gem { 'whiskey_disk for all rubies':
-    gem          => 'whiskey_disk',
-    version      => '~> 0.6',
-    ruby_version => '*',
   }
 
   ##
