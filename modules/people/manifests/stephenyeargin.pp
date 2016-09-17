@@ -27,7 +27,6 @@ class people::stephenyeargin {
       'angry-ip-scanner',
       'appzapper',
       'atom',
-      'bittorrent-sync',
       'boxer',
       'caffeine',
       'dash',
