@@ -73,7 +73,6 @@ class people::stephenyeargin {
       'gnupg',
       'heroku-toolbelt',
       'imagemagick',
-      'ios-sim',
       'lynx',
       'openssl',
       'pngcrush',
